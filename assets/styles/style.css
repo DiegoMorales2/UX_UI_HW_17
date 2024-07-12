@@ -1,0 +1,269 @@
+/* .dm-mono-light {
+    font-family: "DM Mono", monospace;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .dm-mono-regular {
+    font-family: "DM Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .dm-mono-medium {
+    font-family: "DM Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .dm-mono-light-italic {
+    font-family: "DM Mono", monospace;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .dm-mono-regular-italic {
+    font-family: "DM Mono", monospace;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .dm-mono-medium-italic {
+    font-family: "DM Mono", monospace;
+    font-weight: 500;
+    font-style: italic;
+  }
+
+  // <uniquifier>: Use a unique and descriptive class name
+  // <weight>: Use a value from 100 to 1000
+
+.dm-sans-<uniquifier> {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+   */
+
+/* Start of about page css */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 64px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: #000;
+  box-shadow: 0px 2px 40.9px -12px rgba(0, 0, 0, 0.25);
+}
+
+.logo {
+  color: #FFF;
+  font-family: "Bebas Neue";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 1rem;
+}
+
+.navbar {
+  color: #FFF;
+  font-family: "DM Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+  margin-right: 1.5rem;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.navbar:hover {
+ text-decoration: underline; 
+}
+
+.heroimg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 791px;
+  flex-shrink: 0;
+  z-index: -1;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.41) 0%, rgba(0, 0, 0, 0.41) 100%), url(../images/hero-img.png) lightgray 50% / cover no-repeat;
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+
+/* .heroimg img {
+  height: 100%;
+  width: 100%;
+  
+}
+
+.hero-img-background {
+  object-fit: cover;
+} */
+
+.hero-text {
+  width: 40%;
+  color: #FFF;
+  text-align: center;
+  font-family: "Bebas Neue";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.about-section {
+  display: flex;
+  height: 1066px;
+  padding: 257px 257px 0 257px;
+  margin-top: 713px;
+  margin-bottom: 0px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 6rem;
+}
+
+blockquote {
+  color: #7D7C7C;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.32px;
+  margin-left: 0;
+  width: 100%;
+}
+
+.about-section h3 {
+  color: #7D7C7C;
+  font-family: "DM Mono";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.32px;
+  margin: 0;
+  padding: 0;
+  width: fit-content;
+}
+
+.container {
+  width: 26%;
+}
+
+.about-me-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 23%;
+  margin: 0;
+  padding: 0;
+  padding-top: 0;
+}
+
+.about-me-section p {
+  color: #404040;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.32px;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.digital {
+  text-wrap: nowrap;
+  width: fit-content;
+}
+.digital li {
+  list-style-type: none;
+  margin-top: 1.5rem;
+  color: #020202;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.32px;
+}
+
+.digital ul {
+  padding-left: 0;
+}
+
+.brand {
+  margin-top: 4rem;
+  text-wrap: nowrap;
+  width: fit-content;
+}
+.brand li {
+  list-style-type: none;
+  margin-top: 1.5rem;
+  color: #020202;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.32px;
+}
+
+.brand ul {
+  padding-left: 0;
+}
+
+.line-seperator {
+  width: 100%;
+  height: 1px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line-seperator img {
+  height: 100%;
+  width: 100%;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 1.5rem;
+}
+
+.contact-section h2 {
+  color: #000;
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
