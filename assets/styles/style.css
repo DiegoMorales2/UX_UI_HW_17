@@ -253,9 +253,10 @@ blockquote {
 
 .contact-section {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-start;
-  margin-top: 1.5rem;
+  width: 60%;
+  
 }
 
 .contact-section h2 {
@@ -266,4 +267,122 @@ blockquote {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  margin-top: 3.2rem;
+}
+
+.contact-section h3 {
+  color: #7D7C7C;
+  font-family: "DM Mono";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.32px;
+  margin: 0;
+  padding: 0;
+  width: fit-content;
+}
+
+
+.contact-section li {
+  list-style-type: none;
+  margin-top: 1.5rem;
+  color: #020202;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.32px;
+}
+
+
+.contact-section ul {
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.contact-section, .contact-links ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.contact-links, .experience {
+  margin-top: 4rem;
+}
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: fit-content;
+}
+
+.resume {
+  color: #020202;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.32px;
+  text-decoration-line: underline;
+  margin-top: 4rem;
+}
+
+.resume:active {
+  color: rgb(0, 158, 21);
+}
+
+/* .resume:visited {
+  color: rgb(204, 17, 204);
+} */
+
+
+footer {
+  display: flex;
+  height: 3.5rem;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  border-top: solid 1px;
+  margin-top: 10rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  gap: 1.5rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer h2 {
+  color: #000;
+  font-family: "Bebas Neue";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+footer a {
+  text-decoration: none;
+  color: #000;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
