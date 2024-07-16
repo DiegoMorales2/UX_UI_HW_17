@@ -194,6 +194,7 @@ blockquote {
   letter-spacing: 0.32px;
   padding: 0;
   margin-bottom: 1rem;
+  text-wrap: pretty;
 }
 
 .digital {
@@ -240,11 +241,11 @@ blockquote {
 .line-seperator {
   width: 100%;
   height: 1px;
-  margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 16px auto;
 }
 
 .line-seperator img {
@@ -259,6 +260,7 @@ blockquote {
   width: 60%;
   
 }
+
 
 .contact-section h2 {
   color: #000;
@@ -335,10 +337,11 @@ blockquote {
   color: rgb(0, 158, 21);
 }
 
-/* .resume:visited {
-  color: rgb(204, 17, 204);
-} */
-
+.resume-button {
+  display: none;
+  margin-top: 2rem;
+  flex-grow: 1;
+}
 
 footer {
   display: flex;
@@ -347,7 +350,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   border-top: solid 1px;
-  margin-top: 10rem;
+  margin-top: 8rem;
 }
 
 nav {
@@ -388,6 +391,10 @@ footer a:hover {
   text-decoration: underline;
 }
 
+.mobile-links {
+  display: none;
+}
+
 @media only screen and (max-width: 1440px) {
 
   .hero-text {
@@ -426,6 +433,10 @@ footer a:hover {
     gap: 0;
   }
 
+  footer nav a{
+    font-size: 16px;
+  }
+
   .hero-text {
     font-size: 40px;
   }
@@ -434,13 +445,41 @@ footer a:hover {
     font-size: 24px;
   }
 
+  .logo-footer {
+    font-size: 24px;
+  }
+
   .navbar {
     font-size: 16px;
   }
 
-  .about-section {
+  .about-section p{
     font-size: 14px;
     gap: 3rem;
+  }
+
+  .about-section {
+    gap: 3rem;
+  }
+
+  .container blockquote {
+    font-size: 14px;
+  }
+
+  .digital h3 {
+    font-size: 14px;
+  }
+
+  .brand h3 {
+    font-size: 14px;
+  }
+
+  .digital li {
+    font-size: 14px;
+  }
+
+  .brand li {
+    font-size: 14px;
   }
 
   .about-me-section {
@@ -450,5 +489,65 @@ footer a:hover {
   .contact-section {
     gap: 4rem;
     width: 90%;
+  }
+
+  .contact-section h2 {
+    font-size: 32px;
+  }
+
+  .contact-links h3 {
+    font-size: 14px;
+  }
+
+  .contact-links li {
+    font-size: 14px;
+  }
+
+  .experience h3 {
+    font-size: 14px;
+  }
+
+  .experience li {
+    font-size: 14px;
+  }
+
+  .resume {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hero-text {
+    width: 80%;
+  }
+
+  .about-section {
+    font-size: 12px;
+    gap: 2rem;
+  }
+
+  .resume {
+    display: none;
+  }
+
+  .resume-button {
+    display: flex;
+    width: 161px;
+    height: 45px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    background: #000;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+  }
+
+  .social-links {
+    display: none;
+  }
+  
+  .mobile-links {
+    display: flex;
   }
 }
