@@ -387,3 +387,68 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
+@media only screen and (max-width: 1440px) {
+
+  .hero-text {
+      width: 50%;
+  }
+
+  .about-section {
+    padding: 18rem 0 0 0;
+  }
+
+}
+
+@media only screen and (max-width: 1100px) {
+  .hero-text {
+    width: 70%;
+  }
+
+  .about-section img {
+    height: 90%;
+    width: 94%;
+  }
+
+  .contact-section {
+    gap: 4rem;
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  header {
+    height: 48px;
+    flex-shrink: 0;
+  }
+
+  header nav {
+    gap: 0;
+  }
+
+  .hero-text {
+    font-size: 40px;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .navbar {
+    font-size: 16px;
+  }
+
+  .about-section {
+    font-size: 14px;
+    gap: 3rem;
+  }
+
+  .about-me-section {
+    width: 26%;
+  }
+
+  .contact-section {
+    gap: 4rem;
+    width: 90%;
+  }
+}
