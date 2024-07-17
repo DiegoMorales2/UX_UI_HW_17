@@ -749,6 +749,7 @@ footer a:hover {
     }
 
     .about-section {
+      width: 100%;
       margin-top: 50%;
       margin-bottom: 0;
       height: 950px;
@@ -779,6 +780,10 @@ footer a:hover {
       position: fixed;
       top: 8px;
       left: 2px;
-      width: 98%;
+      width: 69%;
+    }
+
+    .line-seperator {
+      background-color: lightgray;
     }
   }
