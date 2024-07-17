@@ -438,6 +438,7 @@ footer a:hover {
   header {
     height: 48px;
     flex-shrink: 0;
+    width: 100%;
   }
 
   header nav {
@@ -644,13 +645,14 @@ footer a:hover {
     z-index: 100;
     background: black;
     outline: .5px solid #232323;
+    width: 100%;
   }
 
    header nav {
     position: fixed;
     z-index: 0;
     margin: 1rem;
-    width: 90%;
+    width: 100%;
     left: -2.7px;
     top: 3rem;
     background: #2F2F2F;
