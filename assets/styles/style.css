@@ -786,4 +786,13 @@ footer a:hover {
     .line-seperator {
       background-color: lightgray;
     }
+
+    .contact-section {
+      gap: 2rem;
+        flex-wrap: wrap;
+    }
+
+    .resume-button {
+      margin-top: 45%;
+    }
   }
