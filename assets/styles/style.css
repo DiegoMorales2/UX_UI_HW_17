@@ -53,6 +53,17 @@
 
 /* Start of about page css */
 
+
+.mobilefilter {
+  outline: solid;
+  height: 1vh;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  z-index: 0;
+  
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -75,7 +86,7 @@ header {
   margin-left: 1rem;
 }
 
-.navbar {
+.navbar, .mobile-navbar {
   color: #FFF;
   font-family: "DM Sans";
   font-size: 24px;
@@ -86,6 +97,10 @@ header {
   margin-right: 1.5rem;
   cursor: pointer;
   z-index: 1;
+}
+
+.mobile-nav{
+  display: none;
 }
 
 .navbar:hover {
@@ -549,5 +564,26 @@ footer a:hover {
   
   .mobile-links {
     display: flex;
+  }
+}
+
+@media only screen and (max-width: 645px) {
+  .navbar {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+    margin-right: 1rem;
+  }
+
+  .mobile-navbar {
+    display: none;
+  }
+
+  .mobile-nav:hover body{
+    background: rgba(0, 0, 0, 0.57);
+
+backdrop-filter: blur(2.000000238418579px);
   }
 }
