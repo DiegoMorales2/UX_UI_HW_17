@@ -747,7 +747,7 @@ footer a:hover {
       width: 94%;
       padding: 8px;
     }
-
+  
     .about-section {
       width: 100%;
       margin-top: 50%;
@@ -756,43 +756,45 @@ footer a:hover {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 390px 98px 98px;
-      grid-template-areas: "container about-me-section"
-                            "digital about-me-section"
-                            "brand about-me-section";
+      grid-template-areas:
+        "container about-me-section"
+        "digital about-me-section"
+        "brand about-me-section";
     }
-
+  
     .about-me-section {
       width: 100%;
     }
-
+  
     .container {
       width: 100%;
     }
-
+  
     header nav {
       top: 3rem;
-      width: 86%;
+      width: 100%; /* Adjusted to 100% */
       left: -6px;
       height: 170px;
     }
-
+  
     header {
       position: fixed;
       top: 8px;
       left: 4px;
-      width: 86%;
+      width: 100%; /* Adjusted to 100% */
     }
-
+  
     .line-seperator {
       background-color: lightgray;
     }
-
+  
     .contact-section {
       gap: 2rem;
-        flex-wrap: wrap;
+      flex-wrap: wrap;
     }
-
+  
     .resume-button {
       margin-top: 45%;
     }
   }
+  
