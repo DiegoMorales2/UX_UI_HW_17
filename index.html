@@ -17,19 +17,17 @@
     <title>About</title>
 </head>
 <body>
-    <div class="mobilefilter"></div>
     <header>
         <h2 class="logo">CAMERON</h2>
-            <nav>
-                <a href="" class="navbar">About</a>
-                <a href="" class="navbar">Work</a>
-                <a href="" class="navbar">Contact</a>
+
+        <img src="./assets/images/mobile-menu.svg" alt="mobile-menu" id="mobile-cta" class="mobile-menus">
+        <img src="./assets/images/mobile-x.svg" alt="mobile-exit"id="mobile-menu-exit" class="mobile-menus">
+
+            <nav id="header-nav">
+                    <a href="" class="navbar">About</a>
+                    <a href="" class="navbar">Work</a>
+                    <a href="" class="navbar">Contact</a>
             </nav>
-            <div class="mobile-nav"><img src="./assets/images/mobile-menu.svg" alt="mobile-menu">
-                <a href="" class="mobile-navbar">About</a>
-                <a href="" class="mobile-navbar">Work</a>
-                <a href="" class="mobile-navbar">Contact</a>
-            </div>
     </header>
 
     <section class="heroimg">
@@ -115,6 +113,33 @@
                 <a href="https://www.instagram.com/diegomorales19.0/?hl=en" target="_blank" class="mobile-links"><img src="./assets/images/instagram.svg" alt="Instagram link"></a>
             </nav>
     </footer>
+
+    <script>
+          document.addEventListener('DOMContentLoaded', function () {
+            const mobileBtn = document.getElementById('mobile-cta');
+            const nav = document.getElementById('header-nav');
+            const mobileBtnExit = document.getElementById('mobile-menu-exit');
+
+            mobileBtn.addEventListener('click', () => {
+                // Toggle menu-btn class on the nav element
+                nav.classList.toggle('menu-btn');
+                // Toggle the image source based on menu state
+                if (nav.classList.contains('menu-btn')) {
+                    mobileBtn.src = "assets/images/Vector.svg"; // Image when menu is active
+                } else {
+                    mobileBtn.src = "assets/images/mobile-menu.svg"; // Image when menu is inactive
+                }
+            });
+
+            mobileBtnExit.addEventListener('click', () => {
+                // Remove menu-btn class when exiting menu
+                nav.classList.remove('menu-btn');
+                // Reset image source if needed
+                mobileBtn.src = "assets/images/mobile-menu.svg"; // Adjust as necessary
+            });
+        });
+
+    </script>
 
 </body>
 </html>

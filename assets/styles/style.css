@@ -54,18 +54,10 @@
 /* Start of about page css */
 
 
-.mobilefilter {
-  outline: solid;
-  height: 1vh;
-  width: 100%;
-  background-color: black;
-  display: flex;
-  z-index: 0;
-  
-}
 
 header {
   display: flex;
+  outline: .5px solid #232323;
   justify-content: space-between;
   align-items: center;
   width: 100%;
@@ -406,6 +398,10 @@ footer a:hover {
   text-decoration: underline;
 }
 
+.mobile-menus {
+  display: none;
+}
+
 .mobile-links {
   display: none;
 }
@@ -529,6 +525,10 @@ footer a:hover {
   .resume {
     font-size: 14px;
   }
+
+  .about-me-section h3 {
+    font-size: 14px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -565,25 +565,220 @@ footer a:hover {
   .mobile-links {
     display: flex;
   }
+
+  .contact-section h2 {
+    font-size: 32px;
+  }
+
+  .contact-links h3 {
+    font-size: 14px;
+  }
+
+  .contact-links li {
+    font-size: 14px;
+  }
+
+  .experience h3 {
+    font-size: 14px;
+  }
+
+  .experience li {
+    font-size: 14px;
+  }
+
+  .resume {
+    font-size: 14px;
+  }
+  footer nav a{
+    font-size: 16px;
+  }
+
+  .hero-text {
+    font-size: 40px;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .logo-footer {
+    font-size: 24px;
+  }
+
+  .navbar {
+    font-size: 16px;
+  }
+
+  .about-section p{
+    font-size: 14px;
+    gap: 3rem;
+  }
 }
 
 @media only screen and (max-width: 645px) {
   .navbar {
-    display: none;
+    display: flex;
+    border-bottom: solid 1px #7D7C7C;
+    width: 100%;
+    justify-content: center;
+    height: 45px;
+    align-items: center;
+    margin-right: 0;
   }
 
-  .mobile-nav {
+  #mobile-menu-exit {
+    display: none;
+  }
+  .navbar:active {
+    background-color: #404040;
+  }
+
+  .mobile-menus {
     display: block;
     margin-right: 1rem;
   }
 
-  .mobile-navbar {
+  header {
+    position: relative;
+    align-items: center;
+    z-index: 100;
+    background: black;
+    outline: .5px solid #232323;
+  }
+
+   header nav {
+    position: fixed;
+    z-index: 0;
+    margin: 1rem;
+    width: 90%;
+    left: -2.7px;
+    top: 3rem;
+    background: #2F2F2F;
+    height: 25vh;
+    padding: 1rem;
+    justify-self: center;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
     display: none;
   }
 
-  .mobile-nav:hover body{
-    background: rgba(0, 0, 0, 0.57);
-
-backdrop-filter: blur(2.000000238418579px);
+  .menu-btn {
+    display: block;
   }
-}
+
+  .heroimg {
+    width: 800px;
+    height: 397px;
+  }
+
+  .hero-text {
+    font-size: 24px;
+    width: 50%;
+  }
+
+  .about-section {
+    margin-top: 25%;
+    height: 50%;
+  }
+
+  .contact-section h2 {
+    font-size: 32px;
+  }
+
+  .contact-links h3 {
+    font-size: 12px;
+  }
+
+  .contact-links li {
+    font-size: 12px;
+  }
+
+  .experience h3 {
+    font-size: 12px;
+  }
+
+  .experience li {
+    font-size: 12px;
+  }
+
+  .navbar {
+    font-size: 12px;
+  }
+
+  .about-section p{
+    font-size: 12px;
+    gap: 3rem;
+  }
+
+  .about-me-section h3 {
+    font-size: 12px;
+    text-wrap: nowrap;
+  }
+
+  .digital h3 {
+    font-size: 12px;
+  }
+
+  .brand h3 {
+    font-size: 12px;
+  }
+
+  .container blockquote {
+    font-size: 12px;
+  }
+
+  .digital li {
+    font-size: 12px;
+  }
+
+  .brand li {
+    font-size: 12px;
+  }
+
+  body {
+    width: 85%;
+  }
+  }
+
+  @media only screen and (max-width: 430px) {
+    body {
+      width: 94%;
+      padding: 8px;
+    }
+
+    .about-section {
+      margin-top: 50%;
+      margin-bottom: 0;
+      height: 950px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 390px 98px 98px;
+      grid-template-areas: "container about-me-section"
+                            "digital about-me-section"
+                            "brand about-me-section";
+    }
+
+    .about-me-section {
+      width: 100%;
+    }
+
+    .container {
+      width: 100%;
+    }
+
+    header nav {
+      top: 3rem;
+      width: 86%;
+      left: -6px;
+      height: 170px;
+    }
+
+    header {
+      position: fixed;
+      top: 8px;
+      left: 2px;
+      width: 98%;
+    }
+  }
